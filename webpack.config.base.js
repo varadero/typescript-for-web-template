@@ -18,6 +18,9 @@ module.exports = {
     resolve: {
         extensions: ['.ts'],
     },
+    optimization: {
+        minimize: false
+    },
     plugins: [
         new CopyPlugin({
             patterns: [
