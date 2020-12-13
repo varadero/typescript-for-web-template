@@ -17,5 +17,9 @@ Make minimized production build with
 
 Source maps will be created in their own files.
 
+If only linting (ESLint) of source code is needed
+
+`npm run lint`
+
 ## Serve
 You must serve the contents of `dist` folder using any HTTP server like `http-server` in order to see them in a browser.
