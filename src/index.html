@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/CustomerInteractionClientSDK.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>URL:
+                <input id="txtURL" value="https://pusntzf212.apac.avaya.com" />
+            </label>
+        </div>
+        <div>
+            <label>Token:
+                <input id="txtToken"
+                    value="Bearer eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxZzhOdlJYbVNES1VyeWs4ajVJdXpBIiwic3ViIjoiYWdlbnQ0OEBhcGFjLmF2YXlhLmNvbSIsImlzcyI6IjM5MmIwOWVlLTA4MTEtNDJmYi04ZTI0LWUzNDRhY2VlMjE3OSIsImV4cCI6MTYxMTE0NzI5MCwiaWF0IjoxNjExMDYwODkwLCJqdGkiOiI2ZjEwNGU3My1mZGRjLTQ1NTItOGU4ZS1mZTc4YTRlMjMwYzIiLCJ1c2VyU2NvcGVMaXN0IjpbeyJmZWF0dXJlTmFtZSI6IkNvbW11bmljYXRpb25BZGRyZXNzIiwiZmVhdHVyZVZhbHVlcyI6WyJhZ2VudDQ4QGFwYWMuYXZheWEuY29tQGFwYWMuYXZheWEuY29tIiwiNDAxMDQ4QGFwYWMuYXZheWEuY29tIl19LHsiZmVhdHVyZU5hbWUiOiJTdGF0aW9uRXh0ZW5zaW9uIiwiZmVhdHVyZVZhbHVlcyI6WyI0MDEwNDgiXX0seyJmZWF0dXJlTmFtZSI6ImNjVXNlclJvbGUiLCJmZWF0dXJlVmFsdWVzIjpbIkFHRU5UIl19LHsiZmVhdHVyZU5hbWUiOiJjY1VzZXJEYXRhIiwiZmVhdHVyZVZhbHVlcyI6WyJ7XCJhcHBsaWNhdGlvblByaXZpbGVnZXNcIjpbe1wiYXBwbGljYXRpb25cIjp7XCJuYW1lXCI6XCJPY2VhbmFcIn0sXCJyb2xlXCI6e1wibmFtZVwiOlwiQUdFTlRcIn19XX0iXX0seyJmZWF0dXJlTmFtZSI6Im1hcHBlZExkYXBBdHRyaWJ1dGUiLCJmZWF0dXJlVmFsdWVzIjpbIm1haWwiXX1dfQ.PP3oXqK6no6GJhlrfLbHyCioxSmpSf2yuvODWR9_gTjlvuwmX3C5hdMFKulqbB1nWegkbLmSKZJRHnjC5WrTrmybhWttKYComucR6mDo45sLjmvGMvB6ySj8gvEX05JcmrTbZuiOjKq1stvcreVuvGrG13R2w5BuAc4pqdnhlHqjN8aptHYGDQGdCRc2GUNCEK7_UsF29sDeMuci3q7kUNt7huuZPuSXU8_maFWgbUXsOA-aN0-CYKPSMxnviZgLwKvGFxZfk8LRqAofMsR1gHeDPm8sdTv35UC_XpOevvF7NNp4NZHR-t7dtZZk7ayY80o1AAl-83Ug8sDCGTorkA" />
+            </label>
+        </div>
+        <div>
+            <label>Username:
+                <input id="txtUsername" value="agent48" />
+            </label>
+        </div>
+        <div>
+            <button id="btnCreateSession">Create session</button>
+            <button id="btnGetConfig">Get configuration</button>
+            <button id="btnActivate">Activate</button>
+            <button id="btnGoReady">Go Ready</button>
+            <button id="btnAccept">Accept interaction</button>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <span>Local video</span>
+                    <button id="btnDisableLocalVideo">Disable</button>
+                    <button id="btnEnableLocalVideo">Enable</button>
+                </div>
+                <video id="videoLocal" autoplay controls></video>
+            </div>
+            <div>
+                <div>Remote video</div>
+                <video id="videoRemote" autoplay controls></video>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <label>Log:</label>
+        </div>
+        <div>
+            <textarea id="txtLog" cols="80" rows="30" readonly></textarea>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
